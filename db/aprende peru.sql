@@ -71,4 +71,3 @@ CREATE TABLE Respuesta (
     CONSTRAINT fk_respuesta_alternativa FOREIGN KEY (id_alternativa_marcada) REFERENCES Alternativa(id_alternativa)
 ) ENGINE=InnoDB;
 
-

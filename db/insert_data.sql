@@ -1,7 +1,6 @@
 INSERT INTO Area (id_area, nombre_area) VALUES
 (1, 'Ciencias Básicas');
 
-
 INSERT INTO Estudiante (id_estudiante, nombre, email) VALUES
 (1, 'María Gómez', 'maria.gomez@example.com'),
 (2, 'Juan Pérez', 'juan.perez@example.com'),
@@ -13,7 +12,6 @@ INSERT INTO Estudiante (id_estudiante, nombre, email) VALUES
 (8, 'Miguel Torres', 'miguel.torres@example.com'),
 (9, 'Laura Díaz', 'laura.diaz@example.com'),
 (10, 'Jorge Morales', 'jorge.morales@example.com');
-
 
 INSERT INTO Evaluacion (id_evaluacion, nombre, id_area, fecha_inicio, fecha_fin, tiempo_duracion, tipo, vigente) VALUES
 (1, 'Evaluación Matemáticas Básicas', 1, '2025-06-01', '2025-06-30', 60, 'cerrada', TRUE),
@@ -52,7 +50,6 @@ INSERT INTO Pregunta (id_pregunta, id_evaluacion, enunciado, puntaje) VALUES
 (23, 5, '¿Qué género literario es la poesía?', 5),
 (24, 5, '¿Quién es Gabriel García Márquez?', 5),
 (25, 5, '¿Qué es un cuento?', 5);
-
 
 INSERT INTO Alternativa (id_alternativa, id_pregunta, texto, es_correcta) VALUES
 (1, 1, 'Alternativa A correcta', TRUE),
@@ -180,7 +177,6 @@ INSERT INTO Alternativa (id_alternativa, id_pregunta, texto, es_correcta) VALUES
 (99, 25, 'Alternativa C incorrecta', FALSE),
 (100, 25, 'Alternativa D incorrecta', FALSE);
 
-
 INSERT INTO Asignacion (id_asignacion, id_estudiante, id_evaluacion, asignada) VALUES
 (1, 1, 1, TRUE),
 (2, 2, 1, TRUE),
@@ -188,11 +184,9 @@ INSERT INTO Asignacion (id_asignacion, id_estudiante, id_evaluacion, asignada) V
 (4, 4, 3, TRUE),
 (5, 5, 4, TRUE);
 
-
 INSERT INTO Intento (id_intento, id_asignacion, fecha_inicio, fecha_fin, puntaje_total, estado) VALUES
 (1, 1, '2025-06-02 09:00:00', '2025-06-02 09:50:00', 25, 'completado'),
 (2, 2, '2025-06-02 10:00:00', NULL, NULL, 'en_progreso');
-
 
 INSERT INTO Respuesta (id_respuesta, id_intento, id_pregunta, id_alternativa_marcada) VALUES
 (1, 1, 1, 1),

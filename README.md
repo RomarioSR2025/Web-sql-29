@@ -28,7 +28,7 @@ Diseñar una base de datos relacional que sirva como soporte para una aplicació
 ---
 
 ## 🧱 Modelo Relacional
-![Texto alternativo](/IMAGEN/EXAMEN.02.png)
+![Texto alternativo](/IMAGEN/image.png)
 
 # Construcción de Base de Datos
 
